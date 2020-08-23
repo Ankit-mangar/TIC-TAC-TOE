@@ -216,5 +216,6 @@ int main()
             }
         }
     }
+    cout<<"DRAW"<<endl;
     return 0;
 }
