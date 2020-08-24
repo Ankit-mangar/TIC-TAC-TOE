@@ -130,6 +130,13 @@ void comp()
 int main()
 {
     start:
+    for(int i=0;i<=8;i++){
+        flag[i]=0;
+    }
+    for(int i=1;i<=9;i++){
+        a[i-1]=i;
+    }
+    system("cls");
     for(int i=0;i<9;i++){
         if(i==3||i==6||i==9){
             cout<<endl;
@@ -153,13 +160,13 @@ int main()
                 player1();
                 int num=check();
                 if(num==1){
-                    cout<<"PLAYER 1 WON";
-                    /*cout<<"PRESS 1 TO CONTINUE\n";
+                    cout<<"PLAYER 1 WON\n";
+                    cout<<"PRESS 1 TO CONTINUE\n";
                     cout<<"PRESS ANY OTHER NO. TO EXIT\n";
                     cin>>inp;
                     if(inp==1)
                         goto start;
-                    else*/
+                    else
                         exit(0);
                 }
             }
@@ -169,12 +176,12 @@ int main()
                 int num=check();
                 if(num==1){
                     cout<<"PLAYER 1 WON\n";
-                    /*cout<<"PRESS 1 TO CONTINUE\n";
+                    cout<<"PRESS 1 TO CONTINUE\n";
                     cout<<"PRESS ANY OTHER NO. TO EXIT\n";
                     cin>>inp;
                     if(inp==1)
                         goto start;
-                    else*/
+                    else
                         exit(0);
                 }
             }
@@ -189,13 +196,13 @@ int main()
                 player();
                 int num=check();
                 if(num==1){
-                    cout<<"PLAYER WON";
-                    /*cout<<"PRESS 1 TO CONTINUE\n";
+                    cout<<"PLAYER WON\n";
+                    cout<<"PRESS 1 TO CONTINUE\n";
                     cout<<"PRESS ANY OTHER NO. TO EXIT\n";
                     cin>>inp;
                     if(inp==1)
                         goto start;
-                    else*/
+                    else
                         exit(0);
                 }
             }
@@ -205,17 +212,25 @@ int main()
                 int num=check();
                 if(num==1){
                     cout<<"COMP WON\n";
-                    /*cout<<"PRESS 1 TO CONTINUE\n";
+                    cout<<"PRESS 1 TO CONTINUE\n";
                     cout<<"PRESS ANY OTHER NO. TO EXIT\n";
                     cin>>inp;
                     if(inp==1)
                         goto start;
-                    else*/
+                    else
                         exit(0);
                 }
             }
         }
     }
-    cout<<"DRAW"<<endl;
+    int inp;
+    cout<<"DRAW\n";
+    cout<<"PRESS 1 TO CONTINUE\n";
+    cout<<"PRESS ANY OTHER NO. TO EXIT\n";
+    cin>>inp;
+    if(inp==1)
+        goto start;
+    else
+        exit(0);
     return 0;
 }
