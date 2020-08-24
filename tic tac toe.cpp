@@ -175,7 +175,7 @@ int main()
                 player2();
                 int num=check();
                 if(num==1){
-                    cout<<"PLAYER 1 WON\n";
+                    cout<<"PLAYER 2 WON\n";
                     cout<<"PRESS 1 TO CONTINUE\n";
                     cout<<"PRESS ANY OTHER NO. TO EXIT\n";
                     cin>>inp;
